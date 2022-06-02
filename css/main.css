@@ -1,19 +1,52 @@
 /*===============Propiedades Globales================*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
+.container-fluid {
+    padding: 7% 10%;
+    font-size: 0.95rem;
+}
+
+.row {
+    justify-content: center;
+}
+
+/*===============Variables================*/
+:root {
+    --main-dark-color: #293040;
+    --main-light-color: #FFFFFF;
+    --main-blue: #3B475C;
+    --main-yellow: #d3ac2b;
+  }
+
+/*===============Botones================*/
+
+.btn-whatsapp {
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    background: #FAFFFA;
+    color: var(--main-blue);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+    background: var(--main-yellow);
+    color: #FAFFFA;
+}
 
 /*===================MENU==========================*/
 
  #menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
+    font-size: 18px !important;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
  }
 
  #menu a{
@@ -148,8 +181,50 @@ button:hover{
     color: #3f3f3f;
 }
 
+/*=========================AREAS DE PRACTICA================================*/
+.sec-blue {
+    min-height: 100vh;
+    background-color: var(--main-blue);
+    color: var(--main-light-color);
+    text-align: center;
+    font-family: 'Inter';
+}
 
+#areas-de-practica .titulo h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+}
 
+#areas-de-practica .titulo h6 {
+    margin: 20px 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.12em;
+}
+
+#areas-de-practica .row {
+    margin-top: 40px;
+}
+
+.especialidad  {
+    margin-top: 50px;
+}
+
+.especialidad h3 {
+
+}
+
+.especialidad p {
+    text-align: left;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 
 /*=========================FOOTER================================*/
 
@@ -288,3 +363,4 @@ footer p{
     ,url("media/python.jpg");
 
 }
+
