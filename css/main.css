@@ -27,10 +27,12 @@ body {
 /*===============Botones================*/
 
 .btn-whatsapp {
-    width: 300px;
-    height: 50px;
+    max-width: 320px;
+    padding: 10px;
+    text-decoration: none;
     border-radius: 15px;
-    background: #FAFFFA;
+    background: var(--main-light-color);
+    border: 2px solid rgba(0,0,0,0.3);
     color: var(--main-blue);
     font-size: 1.25em;
     font-weight: bold;
@@ -187,6 +189,7 @@ button:hover{
     background-color: var(--main-blue);
     color: var(--main-light-color);
     text-align: center;
+    text-align: -webkit-center;
     font-family: 'Inter';
 }
 
@@ -199,6 +202,7 @@ button:hover{
 
 #areas-de-practica .titulo h6 {
     margin: 20px 0;
+    text-align: initial;
     font-style: italic;
     font-weight: 400;
     font-size: 1rem;
@@ -207,22 +211,30 @@ button:hover{
 }
 
 #areas-de-practica .row {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .especialidad  {
-    margin-top: 50px;
+    margin-top: 15px;
+    padding: 35px 30px 20px;
+    border-right: 2px solid var(--main-light-color);
+}
+
+.especialidad:nth-child(3n), .especialidad:last-child{
+    border: none;
 }
 
 .especialidad h3 {
-
+    font-weight: 800;
 }
 
 .especialidad p {
+    margin-top: 20px;
     text-align: left;
     font-style: italic;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
     line-height: 1.5rem;
 }
 
@@ -240,6 +252,14 @@ footer p{
     font-size: 26px;
     padding: 0 8px;
     color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:992px) {
+    .especialidad  {
+        border: none;
+    }
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
@@ -262,7 +282,6 @@ footer p{
  
 }
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
-
 
 @media (max-width:768px) {
 
@@ -289,6 +308,37 @@ footer p{
         top: -120px;
     }
 
+    .especialidad  {
+        margin-top: 15px;
+        padding: 35px 30px 20px;
+        border: none;
+    }
+
+}
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    
+    #bg-contactos{
+        top: -120px;
+    }
 
 }
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
