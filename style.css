@@ -1,0 +1,21 @@
+/*menu*/
+.container-fluid{
+    position: justify contain center;
+}
+.text-light{
+    font: size 76px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(12, 55, 98);
+}
+.navbar-nav li > a {
+    font: size 76px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(12, 55, 98);
+}
+
+header a:hover{
+    color: rgb(4, 54, 140);
+}
+
