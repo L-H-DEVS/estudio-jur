@@ -1,13 +1,24 @@
-let app = document.getElementById('typewriter');
- 
-let typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 75,
+/* Mobile Menu */
+$(document).ready(function () {
+  let iter = 1;
+
+  $('#btnMenu').on('click', function (e) {
+      e.preventDefault();
+
+      if(iter == 1) {
+        $('.menu-mobile .menu-main').animate({right: 0}, 300, function () {
+          iter = 0;
+        });
+      } else {
+          $('.menu-mobile .menu-main').animate({right: '-100%'}, 300, function () {
+              iter = 1;
+          });
+      }
+  });
+
+  $('.menu-mobile .menu-main a').on('click', function(){
+      $('.menu-mobile .menu-main').animate({right: '-100%'}, 300, function () {
+          iter = 1;
+      });
+  });
 });
- 
-typewriter
-  .pauseFor(2500)
- 
-  .pauseFor(200)
-  .deleteChars(10)
-  .start();

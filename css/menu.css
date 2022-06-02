@@ -1,0 +1,105 @@
+/*===================PC==========================*/
+.menu-bar-pc {
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 1px solid rgba(185, 185, 185, 0.15);
+    padding: 0 36px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-main a, .menu-horario {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--main-dark-color);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+}
+
+.menu-horario {
+    font-size: 0.78rem;
+    padding-left: 20px;
+    border-left: 1px solid var(--main-blue);
+}
+
+.menu-main a:hover {
+    color: var(--main-blue);
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--main-blue);
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* -- MOBILE, TABLETS-- */
+@media screen and (max-width: 900px) {
+    /* -- Menu-- */
+    .menu-bar-pc {
+        display: none;
+    }
+
+    .header-contactanos {
+        display: none !important;
+    }
+
+    .menu-mobile {
+        display: block;
+        width: 100%;
+        padding: 5px 18px;
+        background: var(--main-dark-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .menu-mobile .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-mobile .bar .logo {
+        width: 40px;
+    }
+
+    .menu-mobile .bar a i {
+        font-size: 1.4rem;
+        color: var(--main-yellow);
+    }
+    .menu-mobile .menu-main {
+        width: 80%;
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+        border-right: 1px solid rgba(200, 200, 200, 0.5);
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+        background: var(--main-dark-color);
+        text-align: center;
+    }
+
+    .menu-mobile .menu-main a {
+        display: block;
+        font-weight: 400;
+        padding: 10px;
+        color: var(--main-light-color);
+        border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+    }
+    .menu-mobile .menu-main a:hover {
+        background: var(--main-yellow);
+        color: var(--main-dark-color);
+    }
+}

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
 
@@ -25,7 +25,6 @@ body {
   }
 
 /*===============Botones================*/
-
 .btn-whatsapp {
     max-width: 320px;
     padding: 10px;
@@ -42,6 +41,13 @@ body {
     background: var(--main-yellow);
     color: #FAFFFA;
 }
+
+/*===================HEADER==========================*/
+.header-contactanos {
+    background-color: var(--main-blue);
+    font-family: 'Inter', sans-serif;
+}
+/*===================NAVBAR==========================*/
 
 /*===================MENU==========================*/
 
@@ -111,7 +117,6 @@ button:hover{
 
 /*===================SECCION NUESTRO EQUIPO MAPA==========================*/
 #local {
-    margin-top:50px;
     background-color: #f3f3f3;
     display:flex;
     justify-content: center; 
@@ -130,7 +135,6 @@ button:hover{
     margin-left:100px;
     padding-top:150px;
 }
-
 
 /*===========================SECCION EQUIPO MIAMI==================================*/
 #numeros-local{
