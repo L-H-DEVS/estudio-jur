@@ -22,3 +22,19 @@ $(document).ready(function () {
       });
   });
 });
+
+/*Fixed Header*/
+$(document).ready(function() {
+  let fixedHeader = $('#fixedHeader');
+
+  $(window).on('scroll', function() {
+      let projectsOffset = $('#nuestro-equipo').offset().top;
+      let windowScroll = $(window).scrollTop();
+
+      if (windowScroll >= projectsOffset) {
+          fixedHeader.css( 'margin-top', 0);
+      } else if (windowScroll <= projectsOffset/2) {
+          fixedHeader.css( 'margin-top', '-80px');
+      }
+  });
+});

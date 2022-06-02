@@ -162,7 +162,7 @@ button:hover{
 } 
 
  #seccion-contacto{
-    background-color: #1b2a4e;
+    background-color: var(--main-dark-color);
     min-height:500px;
     position:relative;
 }
@@ -241,17 +241,17 @@ button:hover{
 /*=========================FOOTER================================*/
 
 footer {
-    background: #1b2a4e;
+    background: var(--main-dark-color);
     min-height: 100px;;
 }
 footer p{
-    color:#f3f3f3;
+    color: var(--main-light-color);
     text-align:center;
 }
 #iconos  i {
     font-size: 26px;
     padding: 0 8px;
-    color:#f3f3f3;
+    color: var(--main-light-color);
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
@@ -358,26 +358,26 @@ footer p{
         text-align: center;
     }
 }
-#nuestros-programas{
+#nuestro-equipo{
     background-color: rgb(28, 43, 109);
     color: white;
     text-align: center;
 }
 
-#nuestros-programas .container{
+#nuestro-equipo .container{
     padding: 50px 12px;
 }
 
-#nuestros-programas h2{
+#nuestro-equipo h2{
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#nuestros-programas p{
+#nuestro-equipo p{
     display: none;
 }
 
-#nuestros-programas .carta{
+#nuestro-equipo .carta{
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
