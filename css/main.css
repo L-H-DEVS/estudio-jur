@@ -1,19 +1,54 @@
 /*===============Propiedades Globales================*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
+.container-fluid {
+    padding: 7% 10%;
+    font-size: 0.95rem;
+}
+
+.row {
+    justify-content: center;
+}
+
+/*===============Variables================*/
+:root {
+    --main-dark-color: #293040;
+    --main-light-color: #FFFFFF;
+    --main-blue: #3B475C;
+    --main-yellow: #d3ac2b;
+  }
+
+/*===============Botones================*/
+
+.btn-whatsapp {
+    max-width: 320px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    background: var(--main-light-color);
+    border: 2px solid rgba(0,0,0,0.3);
+    color: var(--main-blue);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+    background: var(--main-yellow);
+    color: #FAFFFA;
+}
 
 /*===================MENU==========================*/
 
  #menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
+    font-size: 18px !important;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
  }
 
  #menu a{
@@ -148,8 +183,60 @@ button:hover{
     color: #3f3f3f;
 }
 
+/*=========================AREAS DE PRACTICA================================*/
+.sec-blue {
+    min-height: 100vh;
+    background-color: var(--main-blue);
+    color: var(--main-light-color);
+    text-align: center;
+    text-align: -webkit-center;
+    font-family: 'Inter';
+}
 
+#areas-de-practica .titulo h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+}
 
+#areas-de-practica .titulo h6 {
+    margin: 20px 0;
+    text-align: initial;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.12em;
+}
+
+#areas-de-practica .row {
+    margin-top: 20px;
+}
+
+.especialidad  {
+    margin-top: 15px;
+    padding: 35px 30px 20px;
+    border-right: 2px solid var(--main-light-color);
+}
+
+.especialidad:nth-child(3n), .especialidad:last-child{
+    border: none;
+}
+
+.especialidad h3 {
+    font-weight: 800;
+}
+
+.especialidad p {
+    margin-top: 20px;
+    text-align: left;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
+    line-height: 1.5rem;
+}
 
 /*=========================FOOTER================================*/
 
@@ -165,6 +252,14 @@ footer p{
     font-size: 26px;
     padding: 0 8px;
     color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:992px) {
+    .especialidad  {
+        border: none;
+    }
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
@@ -187,7 +282,6 @@ footer p{
  
 }
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
-
 
 @media (max-width:768px) {
 
@@ -214,6 +308,37 @@ footer p{
         top: -120px;
     }
 
+    .especialidad  {
+        margin-top: 15px;
+        padding: 35px 30px 20px;
+        border: none;
+    }
+
+}
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    
+    #bg-contactos{
+        top: -120px;
+    }
 
 }
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
@@ -288,3 +413,4 @@ footer p{
     ,url("media/python.jpg");
 
 }
+
