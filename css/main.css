@@ -117,6 +117,10 @@ button:hover{
 
 
 /*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+.sec-white {
+    background-color: var(--main-light-color);
+}
+
 #local {
     background-color: #f3f3f3;
     display:flex;
