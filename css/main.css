@@ -7,6 +7,11 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: var(--main-yellow)
+}
+
 .container-fluid {
     padding: 7% 10%;
     font-size: 0.95rem;
@@ -241,17 +246,48 @@ button:hover{
 /*=========================FOOTER================================*/
 
 footer {
-    background: var(--main-dark-color);
-    min-height: 100px;;
-}
-footer p{
+    min-height: 120px;
+    padding: 1% 10%;
+    background-color: var(--main-dark-color);
     color: var(--main-light-color);
-    text-align:center;
+    font-family: 'Inter';
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(185, 185, 185, 0.15);
 }
-#iconos  i {
-    font-size: 26px;
-    padding: 0 8px;
+
+.footer-data, .footer-socials {
+    align-self: center;
+}
+
+.footer-copy span {
+    font-weight: 600;
+}
+
+.footer-dev {
+    font-size: 0.75rem;
+}
+
+.footer-dev a:hover {
     color: var(--main-light-color);
+    font-size: 0.82rem;
+}
+
+.footer-socials {
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+}
+
+.footer-socials a {
+    color: var(--main-light-color);
+    font-size: 1.5rem;
+}
+
+.footer-socials a:hover {
+    color: var(--main-yellow);
+    font-size: 1.8rem;
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
