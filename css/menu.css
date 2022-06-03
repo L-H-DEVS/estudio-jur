@@ -67,6 +67,13 @@
 
 .fixed-header .menu-main a:hover, .fixed-header .menu-horario a:hover {
     color: var(--main-yellow);
+    background-color: rgba(41, 48, 64, 0.1);
+}
+
+@media screen and (max-width: 1060px) {
+    .fixed-header .menu-main a:hover {
+        padding: 8px 15px;
+    }
 }
 
 /* -- MOBILE, TABLETS-- */

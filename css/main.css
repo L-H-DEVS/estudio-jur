@@ -49,6 +49,7 @@ a {
 
 .btn-yellow {
     padding: 10px 20px;
+    width: 100%;
     border-radius: 15px;
     background: var(--main-yellow);
     border: 2px solid rgba(0,0,0,0.3);
@@ -258,6 +259,15 @@ footer {
     .especialidad  {
         border: none;
     }
+
+    .contact-info {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn-yellow {
+        width: 80%;
+    }
 }
 
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
@@ -279,6 +289,13 @@ footer {
 @media (max-width: 576px) {
     .contact-curve{
         top: -50px;
+    } 
+}
+
+@media (max-width: 420px) {
+    .contact-curve{
+        position: relative;
+        top: 15px;
     } 
 }
 
