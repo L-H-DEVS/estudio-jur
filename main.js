@@ -1,3 +1,22 @@
+/* Datos Generales */
+$(document).ready(function () {
+  const today = new Date();
+  const year = today.getFullYear();
+  const telf = "+51 936 835 902";
+  const whatsapp = "https://api.whatsapp.com/send?phone=51936835902";
+  const direccion = "Jirón Sinchi Roca 7393 Urb. El Trébol II Etapa, Los Olivos - Lima 15302";
+
+  let yearTag = $('#year');
+  let telfTag = $('.telf');
+  let dirTag = $('.address');
+  let whatsBtn = $('.btn-whatsapp');
+
+  yearTag.text(year);
+  telfTag.text(telf);
+  dirTag.text(direccion);
+  whatsBtn.attr("href", whatsapp);
+});
+
 /* Mobile Menu */
 $(document).ready(function () {
   let iter = 1;
