@@ -79,7 +79,9 @@ a {
 }
 
 /*===================SLIDER DE IMAGENES==========================*/
-
+#logop{
+    height:150px;
+}
 #mazo{
     width: 100%;
     margin-top: -80px;
@@ -97,9 +99,23 @@ a {
     background-attachment: fixed;
 
 }
+.item{
+    margin: 1em 0px;
+    padding:1em;
+    float:left;
+    margin-left:40px;
+  
+    
+  } 
+  .persona{
+     border-radius: 50%;
+  }
+ 
 
 #mazo h1{
-    color: rgb(30, 6, 238);
+    color: rgb(0, 0, 8);
+    font-size:30px;
+ 
 }
 
 #mazo button{
