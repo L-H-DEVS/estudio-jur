@@ -23,7 +23,7 @@
   <!--========================================================== -->
   <header>
     <div class="header-contactanos d-flex justify-content-center">
-      <p id="contactanos" class="text-light mb-0 p-2">Contáctanos +(51)9786-10500</p>
+      <p id="contactanos" class="text-light mb-0 p-2">Contáctanos <span class="telf"></span></p>
     </div>
     <!-- Móvil -->
     <div class="menu-mobile">
@@ -133,7 +133,7 @@
   <section id="sec-areas-de-practica" class="sec-blue container-fluid">
     <div class="titulo col-lg-7">
       <h2 class="middle-heading">Áreas de Práctica</h2>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt</h6>
+      <h6>Nos especializamos en Derecho Civil, Derecho Inmobiliario, Derecho Penal, Derecho Laboral, Derecho Comercial, Derecho Tributario, negociaciones de deudas bancarias, analisis y reportes en el sistema financiero de la mano con Equifax y Sentinel.</h6>
     </div>
 
     <div class="row">
@@ -169,7 +169,7 @@
     </div>
 
     <div class="row">
-      <a href="https://api.whatsapp.com/send?phone=3197010240285" class="btn-whatsapp" target="_blank"><img
+      <a class="btn-whatsapp" target="_blank"><img
           src="media/whatsapp.png" width="24px" />
         HAZ TU CONSULTA AQUÍ</button></a>
     </div>
@@ -182,7 +182,7 @@
 
   <section id="sec-mapa" class="sec-mapa container-fluid">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.6538806763969!2d-77.06579237079484!3d-12.001083987675367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cef9a85cba31%3A0x8948f94f30860a2!2sSinchi%20Roca%207393%2C%20Cercado%20de%20Lima%2015302!5e0!3m2!1ses-419!2spe!4v1654152700245!5m2!1ses-419!2spe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.0137405763417!2d-77.06666724184308!3d-12.000851039493773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602731282ba46aff!2zMTLCsDAwJzAzLjYiUyA3N8KwMDMnNTUuMSJX!5e0!3m2!1ses-419!2spe!4v1654324195889!5m2!1ses-419!2spe"
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
@@ -202,22 +202,27 @@
   <section id="sec-contacto" class="sec-dark">
     <div class="row">
       <div class="contact-info col-lg-4 col-md-6">
-        <p><i class="fa-solid fa-location-dot"></i> Sinchi Roca 7393, Lima 15302</p>
-        <p><i class="fa-solid fa-envelope"></i> abc@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +51 9999 00000</p>
+        <p><i class="fa-solid fa-location-dot"></i><span class="address"></span></p>
+        <p><i class="fa-solid fa-envelope"></i>abc@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i><span class="telf"></span></p>
       </div>
       <form method="POST" class="col-lg-6 col-md-8 contact-form" id="contact-form">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display:none;">       
+        <!-- Catpcha deshabilitado -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" id="success-link">
         <div class="mb-3">
-          <input type="input" class="form-control" id="name" name="name" placeholder="John Perez">
+          <input type="input" class="form-control" name="Nombre" id="name" placeholder="John Perez" required>
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+          <input type="email" class="form-control" name="E-mail" id="email" placeholder="nombre@ejemplo.com" required>
         </div>
         <div class="mb-3">
-          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+          <input type="tel" class="form-control" name="Teléfono" id="phone" placeholder="Teléfono">
         </div>
         <div class="mb-3">
-          <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+          <textarea class="form-control" name="Mensaje" id="message" rows="4"></textarea>
         </div>
         <div class="mb-3">
           <button type="submit" class=" btn btn-yellow">Enviar Mensaje</button>
@@ -236,14 +241,15 @@
     <!--w-100  d-flex  align-items-center justify-content-center flex-wrap-->
     <div class="row" style="min-height: inherit;">
       <div class="col-lg-6 footer-data">
-        <p class="footer-copy"><span>Armas y Leyva SAC</span> © Todos Los Derechos Reservados 2022</p>
+        <p class="footer-copy"><span id="estudio-nombre">Armas y Leyva SAC</span> © Todos Los Derechos Reservados <span id="year"></span></p>
         <p class="footer-dev">Desarrollado por <a href="" target="_blank">Disquete Galaxico</a></p>
       </div>
 
       <div class="col-lg-2 col-sm-4 col-4 footer-socials">
-        <a href="" target="_blank"><i class="fa-brands fa-facebook social-icon"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-twitter social-icon"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>
+        <a href="https://www.facebook.com/A-G-Asesoría-Legal-104953531433293" target="_blank"><i
+            class="fa-brands fa-facebook social-icon"></i></a>
+        <a href="https://www.instagram.com/aygestudiolegal/" target="_blank"><i
+            class="fa-brands fa-instagram social-icon"></i></a>
       </div>
     </div>
   </footer>
