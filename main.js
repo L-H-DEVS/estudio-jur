@@ -15,10 +15,19 @@ $(document).ready(function () {
   telfTag.text(telf);
   dirTag.text(direccion);
   whatsBtn.attr("href", whatsapp);
+
+  //Contact Form
+  const email = "disquetegalaxico@gmail.com";
+  const successlink = "http://127.0.0.1:5500/success.html"; //https://lorennaleon.github.io/estudio-jur/success.html
+
+  $('#contact-form')[0].reset();
+  $('#contact-form').attr("action", `https://formsubmit.co/${email}`);
+  $('#success-link').attr("value", successlink);
 });
 
-/* Mobile Menu */
+
 $(document).ready(function () {
+  /* Mobile Menu */
   let iter = 1;
 
   $('#btnMenu').on('click', function (e) {
@@ -40,10 +49,8 @@ $(document).ready(function () {
           iter = 1;
       });
   });
-});
 
-/*Fixed Header*/
-$(document).ready(function() {
+  /*Fixed Header*/
   let fixedHeader = $('#fixedHeader');
 
   $(window).on('scroll', function() {

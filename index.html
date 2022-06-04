@@ -133,7 +133,7 @@
   <section id="sec-areas-de-practica" class="sec-blue container-fluid">
     <div class="titulo col-lg-7">
       <h2 class="middle-heading">Áreas de Práctica</h2>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt</h6>
+      <h6>Nos especializamos en Derecho Civil, Derecho Inmobiliario, Derecho Penal, Derecho Laboral, Derecho Comercial, Derecho Tributario, negociaciones de deudas bancarias, analisis y reportes en el sistema financiero de la mano con Equifax y Sentinel.</h6>
     </div>
 
     <div class="row">
@@ -207,17 +207,22 @@
         <p><i class="fa-solid fa-phone"></i><span class="telf"></span></p>
       </div>
       <form method="POST" class="col-lg-6 col-md-8 contact-form" id="contact-form">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display:none;">       
+        <!-- Catpcha deshabilitado -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" id="success-link">
         <div class="mb-3">
-          <input type="input" class="form-control" id="name" name="name" placeholder="John Perez">
+          <input type="input" class="form-control" name="Nombre" id="name" placeholder="John Perez" required>
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+          <input type="email" class="form-control" name="E-mail" id="email" placeholder="nombre@ejemplo.com" required>
         </div>
         <div class="mb-3">
-          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+          <input type="tel" class="form-control" name="Teléfono" id="phone" placeholder="Teléfono">
         </div>
         <div class="mb-3">
-          <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+          <textarea class="form-control" name="Mensaje" id="message" rows="4"></textarea>
         </div>
         <div class="mb-3">
           <button type="submit" class=" btn btn-yellow">Enviar Mensaje</button>
