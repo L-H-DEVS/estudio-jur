@@ -1,0 +1,78 @@
+{
+    "integrantes": [
+        {
+            "id": "INT0001",
+            "name": "Axel Armas",
+            "resume": "Amplia experiencia en el sistema procesal civil, registral, notarial y extrajudicial, ex-trabajador de la Corte Superior de Justicia de Lima Norte. Se encuentra registrado en el Ministerio de Justicia y Derechos Humanos como Conciliador Extrajudicial."
+        },
+        {
+            "id": "INT0002",
+            "name": "Richard Armas",
+            "resume": "Experiencia en el ámbito civil y penal con especial connotación en el derecho penal."
+        },
+        {
+            "id": "INT0003",
+            "name": "Geraldine Leyva",
+            "resume": "Amplia experiencia y reconocimiento en el ámbito penal nacional, ha laborado en diversos estudios jurídicos de renombre."
+        }
+    ],
+    "especialidades": [
+        {
+            "id": "ESP0001",
+            "especialidadName": "Especialidad Civil",
+            "tramitesItems": [
+                {
+                    "item": "Demandas de pensión alimenticia o de disminución de pensión alimenticiat"
+                },
+                {
+                    "item": "Demandas de divorcio - Separación"
+                },
+                {
+                    "item": "Demandas de obligación de dar suma de dinero, de hacer o de no hacer."
+                },
+                {
+                    "item": "Petición de herencia – Desheredación"
+                },
+                {
+                    "item": "Sucesiones Intestadas"
+                },
+                {
+                    "item": "Asesoría en bienes raíces, inmobiliarios."
+                },
+                {
+                    "item": "Estudio de títulos (bienes muebles, inmuebles)"
+                },
+                {
+                    "item": "Rectificación de partidas de nacimiento, fallecimiento, matrimonio, o de DNI en RENIEC"
+                },
+                {
+                    "item": "Redacción o resolución de contratos de compraventa, alquiler o de préstamos"
+                },
+                {
+                    "item": "Trámite para emisión de copias literales, vigencia de poder, duplicados y renovación de DNI, antecedentes policiales – judiciales y penales, etc."
+                }
+            ]
+        },
+        {
+            "id": "ESP0002",
+            "especialidadName": "Especialidad Penal, Registral y Bancario",
+            "tramitesItems": [
+                {
+                    "item": "Denuncias y procedimientos penales en general"
+                },
+                {
+                    "item": "Trámite para emisión de copias literales, vigencia de poder, duplicados y renovación de DNI, antecedentes policiales – judiciales y penales, etc."
+                },
+                {
+                    "item": "Asesoría y redacción de escritos en tramites notariales (cartas notariales, carta poder, etc), registrales y ante empresas privadas (Sedapal, Enel, Luz del Sur, Calidda, etc)"
+                },
+                {
+                    "item": "Análisis del reporte en el sistema financiero de la mano con Equifax y Sentinel"
+                },
+                {
+                    "item": "Negociación de deuda"
+                }
+            ]
+        }
+    ]
+}

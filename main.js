@@ -1,31 +1,35 @@
-/* Datos Generales */
+//Poblando información de contacto
 $(document).ready(function () {
+  /* Datos Generales */
   const today = new Date();
   const year = today.getFullYear();
   const telf = "+51 936 835 902";
   const whatsapp = "https://api.whatsapp.com/send?phone=51936835902";
   const direccion = "Jirón Sinchi Roca 7393 Urb. El Trébol II Etapa, Los Olivos - Lima 15302";
 
+  const email = "estudioarmasyleyva@gmail.com";
+  const successlink = "http://127.0.0.1:5500/success.html"; //https://lorennaleon.github.io/estudio-jur/success.html
+
+
   let yearTag = $('#year');
   let telfTag = $('.telf');
   let dirTag = $('.address');
+  let emailTag = $('.email');
   let whatsBtn = $('.btn-whatsapp');
 
   yearTag.text(year);
   telfTag.text(telf);
   dirTag.text(direccion);
+  emailTag.text(email);
   whatsBtn.attr("href", whatsapp);
 
   //Contact Form
-  const email = "disquetegalaxico@gmail.com";
-  const successlink = "http://127.0.0.1:5500/success.html"; //https://lorennaleon.github.io/estudio-jur/success.html
-
   $('#contact-form')[0].reset();
   $('#contact-form').attr("action", `https://formsubmit.co/${email}`);
   $('#success-link').attr("value", successlink);
 });
 
-
+//Animación de menú de opciones (navbar)
 $(document).ready(function () {
   /* Mobile Menu */
   let iter = 1;
@@ -50,7 +54,7 @@ $(document).ready(function () {
       });
   });
 
-  /*Fixed Header*/
+  /*Fixed Menu*/
   let fixedHeader = $('#fixedHeader');
 
   $(window).on('scroll', function() {
