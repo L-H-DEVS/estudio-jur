@@ -93,6 +93,8 @@ a {
 #mazo{
     margin-top: -100px;
     min-height: 100vh;
+    display: flex;
+    justify-content: space-between !important;
     text-align: center;
     flex-direction: column;
     background-image : url('../media/fondo_3.jpg');
@@ -182,6 +184,15 @@ button:hover{
     color: rgb(28, 43, 109);
 }
 
+.sec-light {
+    min-height: 100vh;
+    background-color: var(--main-light-color);
+    color: var(--main-blue);
+    text-align: center;
+    text-align: -webkit-center;
+    font-family: 'Inter', sans-serif;
+}
+
 /*=========================ESPECIALIDADES / AREAS DE PRACTICA================================*/
 .sec-light {
     min-height: 100vh;
@@ -192,14 +203,14 @@ button:hover{
     font-family: 'Inter', sans-serif;
 }
 
-#sec-especialidades .titulo h2 {
+#sec-especialidades .titulo h2, #nuestro-equipo .titulo h2 {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 800;
     font-size: 2rem;
 }
 
-#sec-especialidades .titulo h6 {
+#sec-especialidades .titulo h6, #nuestro-equipo .titulo h6 {
     margin: 20px 0;
     text-align: initial;
     font-style: italic;
@@ -382,23 +393,8 @@ footer {
     } 
 }
 
-#nuestro-equipo{
-    background-color: var(--main-dark-color);
-    color: white;
-    text-align: center;
-}
-
 #nuestro-equipo .container{
     padding: 50px 12px;
-}
-
-#nuestro-equipo h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestro-equipo p{
-    display: none;
 }
 
 #nuestro-equipo .carta{
