@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cookie&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nuosu+SIL&display=swap');
+
+/*
+font-family: 'Bree Serif', serif;
+font-family: 'Cardo', serif;
+font-family: 'Cookie', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Nuosu SIL', serif;*/
 html, body { height: 100%;}
 
 body {
@@ -73,7 +81,6 @@ a {
 /*===================HEADER==========================*/
 .header-contactanos {
     background-color: var(--main-blue);
-    font-family: 'Inter', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -84,41 +91,66 @@ a {
     height:150px;
 }
 #mazo{
-    width: 100%;
-    margin-top: -80px;
-    background-image : url('../media/mazo-judicial.jpg');
-    opacity: 0.8;
+    margin-top: -100px;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between !important;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    background-image : url('../media/fondo_3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
 }
+
+#mazo .row {
+    margin-top: 50px;
+}
+
+#mazo .row .title {
+    display: grid;
+    text-align: left;
+}
+
 .item{
     margin: 1em 0px;
     padding:1em;
     float:left;
-    margin-left:40px;
-  
-    
-  } 
-  .persona{
-     border-radius: 50%;
-  }
- 
+    margin-left:40px;    
+}
 
 #mazo h1{
-    color: rgb(0, 0, 8);
+    color: var(--main-light-color);
     font-size: 3.2rem;
-    font-family: 'Abril Fatface', cursive;
-    line-height: 3.5rem;
+    font-weight: 600;
+    font-family: 'Cardo', cursive;
+    line-height: 4rem;
+    margin-bottom: 50px;    
 }
+
+#mazo h1 span{
+    font-style: italic;
+    font-size: 3.4rem;
+}
+
+.equipo {
+    display: flex;
+    justify-content: center;
+}
+
+.persona-bg {
+    margin-right: 50px;
+}
+
+.persona-bg:last-child {
+    margin-right: 0;
+}
+
+.persona{
+    border-radius: 50%;
+    border: solid 10px var(--main-light-color);
+} 
 
 #mazo button{
     font-size: 1.75em;
@@ -147,24 +179,24 @@ button:hover{
     color: rgb(28, 43, 109);
 }
 
-/*=========================AREAS DE PRACTICA================================*/
+/*=========================ESPECIALIDADES / AREAS DE PRACTICA================================*/
 .sec-light {
     min-height: 100vh;
     background-color: var(--main-light-color);
     color: var(--main-blue);
     text-align: center;
     text-align: -webkit-center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
 
-#areas-de-practica .titulo h2 {
+#sec-especialidades .titulo h2, #nuestro-equipo .titulo h2 {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 800;
     font-size: 2rem;
 }
 
-#areas-de-practica .titulo h6 {
+#sec-especialidades .titulo h6, #nuestro-equipo .titulo h6 {
     margin: 20px 0;
     text-align: initial;
     font-style: italic;
@@ -174,8 +206,8 @@ button:hover{
     letter-spacing: 0.12em;
 }
 
-#areas-de-practica .row {
-    margin-top: 20px;
+#sec-especialidades .row {
+    margin: 26px 0 30px;
 }
 
 .especialidad  {
@@ -192,7 +224,7 @@ button:hover{
     font-weight: 800;
 }
 
-.especialidad p {
+.especialidad ul {
     margin-top: 20px;
     text-align: left;
     font-style: italic;
@@ -200,11 +232,6 @@ button:hover{
     font-size: 0.875rem;
     letter-spacing: 0.12em;
     line-height: 1.5rem;
-}
-
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
-.sec-mapa {
-    background-color: var(--main-light-color);
 }
 
 /*=========================SECCION CONTACTANOS (CURVE Y FORM)================================*/
@@ -218,7 +245,6 @@ button:hover{
     color: var(--main-light-color);
     text-align: center;
     text-align: -webkit-center;
-    font-family: 'Inter';
 }
 
 .sec-dark .row {
@@ -240,7 +266,6 @@ footer {
     padding: 1% 10%;
     background-color: var(--main-dark-color);
     color: var(--main-light-color);
-    font-family: 'Inter';
     text-align: center;
     text-transform: uppercase;
     border-top: 1px solid rgba(185, 185, 185, 0.15);
@@ -281,10 +306,31 @@ footer {
 }
 
 
+@media (max-width:1200px) {
+    #mazo {
+        margin-top: 0;
+    }
+}
+
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
 @media (max-width:992px) {
+    #mazo {
+        height: auto !important;
+    }
+
+    #mazo .title {
+        margin-top: 150px;
+        display: block !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .equipo {
+        display: none;
+    }
+
     .especialidad  {
         border: none;
     }
@@ -328,23 +374,8 @@ footer {
     } 
 }
 
-#nuestro-equipo{
-    background-color: var(--main-dark-color);
-    color: white;
-    text-align: center;
-}
-
 #nuestro-equipo .container{
     padding: 50px 12px;
-}
-
-#nuestro-equipo h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestro-equipo p{
-    display: none;
 }
 
 #nuestro-equipo .carta{
@@ -361,26 +392,6 @@ footer {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/balanza.jpg");
+    ,url("/media/balanza.jpg");
 
 }
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/balanza.jpg");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/python.jpg");
-
-}
-
