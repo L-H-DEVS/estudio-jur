@@ -113,16 +113,12 @@ a {
     text-align: left;
 }
 
-
-
 .item{
     margin: 1em 0px;
     padding:1em;
     float:left;
-    margin-left:40px;
-  
-    
-  }
+    margin-left:40px;    
+}
 
 #mazo h1{
     color: var(--main-light-color);
@@ -152,7 +148,6 @@ a {
 }
 
 .persona{
-    width: 100%;
     border-radius: 50%;
     border: solid 10px var(--main-light-color);
 } 
@@ -182,15 +177,6 @@ button:hover{
 }
 #contactanos{
     color: rgb(28, 43, 109);
-}
-
-.sec-light {
-    min-height: 100vh;
-    background-color: var(--main-light-color);
-    color: var(--main-blue);
-    text-align: center;
-    text-align: -webkit-center;
-    font-family: 'Inter', sans-serif;
 }
 
 /*=========================ESPECIALIDADES / AREAS DE PRACTICA================================*/
@@ -246,11 +232,6 @@ button:hover{
     font-size: 0.875rem;
     letter-spacing: 0.12em;
     line-height: 1.5rem;
-}
-
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
-.sec-mapa {
-    background-color: var(--main-light-color);
 }
 
 /*=========================SECCION CONTACTANOS (CURVE Y FORM)================================*/
@@ -411,26 +392,6 @@ footer {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/balanza.jpg");
+    ,url("/media/balanza.jpg");
 
 }
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/balanza.jpg");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/python.jpg");
-
-}
-
