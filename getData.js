@@ -1,6 +1,6 @@
 $(document).ready(function () {
   let especialidadesSection = $("#sec-listado-especialidades");
-
+  let integrantesSection = $("#sec-name");
   $.ajax({
     type: "GET",
     url: "./data/datos.json",
@@ -22,5 +22,8 @@ $(document).ready(function () {
         </div>`
       );
     });
+    //JALANDO INTEGRANTES
+    
+   
   });
 });
