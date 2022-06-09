@@ -268,11 +268,7 @@ button:hover {
     background-color: rgb(41, 52, 89);
 }
 
-.btn-close{
-    margin-bottom: 5Ppx;
-    height:7px;
-    width:7px;
-}
+
 /*=========================ESPECIALIDADES / AREAS DE PRACTICA================================*/
 .sec-light {
     min-height: 100vh;
