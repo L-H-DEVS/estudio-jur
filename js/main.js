@@ -4,7 +4,8 @@ $(document).ready(function () {
   const today = new Date();
   const year = today.getFullYear();
   const telf = "+51 936 835 902";
-  const whatsapp = "https://api.whatsapp.com/send?phone=51936835902";
+  const message = "Hola%20Quisiera%20hacer%20una%20consulta%20por%20favor.";
+  const whatsapp = `https://wa.me/51936835902?text=${message}`;
   const direccion =
     "Jirón Sinchi Roca 7393 Urb. El Trébol II Etapa, Los Olivos - Lima 15302";
 
