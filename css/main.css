@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cookie&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nuosu+SIL&display=swap');
 
 /*
@@ -11,14 +10,17 @@ font-family: 'Cardo', serif;
 font-family: 'Cookie', cursive;
 font-family: 'Inter', sans-serif;
 font-family: 'Nuosu SIL', serif;*/
-html, body { height: 100%;}
+html,
+body {
+    height: 100%;
+}
 
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
 
-body > footer {
+body>footer {
     position: sticky;
     top: 100vh;
 }
@@ -43,16 +45,17 @@ a {
     --main-light-color: #FFFFFF;
     --main-blue: #3B475C;
     --main-yellow: #d3ac2b;
-  }
+}
 
 /*===============Botones================*/
 .btn-whatsapp {
     max-width: 320px;
     padding: 10px;
+    text-align: center;
     text-decoration: none;
     border-radius: 15px;
     background: var(--main-light-color);
-    border: 2px solid rgba(0,0,0,0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     color: var(--main-blue);
     font-size: 1.25em;
     font-weight: bold;
@@ -68,9 +71,11 @@ a {
     width: 100%;
     border-radius: 15px;
     background: var(--main-yellow);
-    border: 2px solid rgba(0,0,0,0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     color: var(--main-dark-color);
+    text-transform: uppercase;
     font-size: 1.25em;
+    font-weight: bold;
 }
 
 .btn-yellow:hover {
@@ -87,17 +92,18 @@ a {
 }
 
 /*===================SLIDER DE IMAGENES==========================*/
-#logop{
-    height:150px;
+#logop {
+    height: 150px;
 }
-#mazo{
+
+#mazo {
     margin-top: -100px;
     min-height: 100vh;
     display: flex;
     justify-content: space-between !important;
     text-align: center;
     flex-direction: column;
-    background-image : url('../media/fondo_3.jpg');
+    background-image: url('../media/fondo_3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -113,23 +119,23 @@ a {
     text-align: left;
 }
 
-.item{
+.item {
     margin: 1em 0px;
-    padding:1em;
-    float:left;
-    margin-left:40px;    
+    padding: 1em;
+    float: left;
+    margin-left: 40px;
 }
 
-#mazo h1{
+#mazo h1 {
     color: var(--main-light-color);
     font-size: 3.2rem;
     font-weight: 600;
     font-family: 'Cardo', cursive;
     line-height: 4rem;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
 }
 
-#mazo h1 span{
+#mazo h1 span {
     font-style: italic;
     font-size: 3.4rem;
 }
@@ -147,118 +153,113 @@ a {
     margin-right: 0;
 }
 
-.persona{
+.persona {
     border-radius: 50%;
     border: solid 10px var(--main-light-color);
-    background-image:url(./media/richard.png);
-    background-repeat:no-repeat;
-    height:200px;
-    width:200px;
-    background-position:center;
-} 
-.botonmoda3{
-    background-image:url(./media/richard.png);
-    background-repeat:no-repeat;
-    height:200px;
-    width:200px;
-    background-position:center;
-    
+    background-image: url(./media/richard.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-position: center;
 }
-#quienessomostitulo{
+
+.botonmoda3 {
+    background-image: url(./media/richard.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+}
+
+#quienessomostitulo {
     color: var(--main-yellow);
-    font-size:50px;
-    margin-bottom:40px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
-#quienessomos{
+
+#quienessomos {
     font-family: 'Cookie', cursive;
-    font-size:40px;
-    margin-bottom:60px;
+    font-size: 40px;
+    margin-bottom: 60px;
 }
-#botonmodal{
+
+#botonmodal {
     max-width: 320px;
     padding: 10px;
     text-decoration: none;
     border-radius: 15px;
     background: var(--main-yellow);
     color: black;
-    border: 2px solid rgba(0,0,0,0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     font-size: 1.25em;
     font-weight: bold;
 }
 
-#botoncontactanos{
+#botoncontactanos {
     max-width: 320px;
     padding: 10px;
     text-decoration: none;
     border-radius: 15px;
     background: var(--main-yellow);
     color: black;
-    border: 2px solid rgba(0,0,0,0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     font-size: 1.25em;
     font-weight: bold;
 }
 
-#botoncontactanos:hover {
-    
-    
-    background-color:rgb(28, 43, 109);
-    color: white;
-}
-
-#mazo button{
-    font-size: 1.75em;
-}
-
-button{
+button {
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: rgb(28, 43, 109);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(28, 43, 109);
 }
 
 
-#contactanos{
+#contactanos {
     color: rgb(28, 43, 109);
 }
 
 
-#mod{
+#mod {
     border-radius: 50%;
-    
 }
-#mod1{
+
+#mod1 {
     border-radius: 50%;
 }
 
 /*=========================modal================================*/
-.modal-fade{
-    color:white;
+.modal-fade {
+    color: white;
 }
-.modal-content{
-    background-color:white;
+
+.modal-content {
+    background-color: white;
 }
-.modal-title{
-    
-    font-size:50px;
+
+.modal-title {
+    font-size: 50px;
     font-family: 'Bree Serif', serif;
-    color:black;
+    color: black;
 }
-.modal-body{
-    background-color:rgb(41, 52, 89);
+
+.modal-body {
+    background-color: rgb(41, 52, 89);
     font-size: 25px;
     font-family: 'Nuosu SIL', serif;
-    color:white;
+    color: white;
 }
-.modal-footer{
-    background-color:rgb(41, 52, 89);
+
+.modal-footer {
+    background-color: rgb(41, 52, 89);
 }
 
 /*=========================ESPECIALIDADES / AREAS DE PRACTICA================================*/
@@ -268,17 +269,18 @@ button:hover{
     color: var(--main-blue);
     text-align: center;
     text-align: -webkit-center;
-    font-family: 'Inter', sans-serif;
 }
 
-#sec-especialidades .titulo h2, #nuestro-equipo .titulo h2 {
+#sec-especialidades .titulo h2,
+#nuestro-equipo .titulo h2 {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 800;
     font-size: 2rem;
 }
 
-#sec-especialidades .titulo h6, #nuestro-equipo .titulo h6 {
+#sec-especialidades .titulo h6,
+#nuestro-equipo .titulo h6 {
     margin: 20px 0;
     text-align: initial;
     font-style: italic;
@@ -292,13 +294,14 @@ button:hover{
     margin: 26px 0 30px;
 }
 
-.especialidad  {
+.especialidad {
     margin-top: 15px;
     padding: 35px 30px 20px;
     border-right: 2px solid var(--main-blue);
 }
 
-.especialidad:nth-child(3n), .especialidad:last-child{
+.especialidad:nth-child(3n),
+.especialidad:last-child {
     border: none;
 }
 
@@ -317,9 +320,9 @@ button:hover{
 }
 
 /*=========================SECCION CONTACTANOS (CURVE Y FORM)================================*/
-.contact-curve{
+.contact-curve {
     height: 90px;
-} 
+}
 
 .sec-dark {
     padding: 7% 10%;
@@ -342,6 +345,42 @@ button:hover{
     margin-right: 9px;
 }
 
+.success-msg-header {
+    background-color: var(--main-blue);
+}
+
+.success-msg-header .modal-title {
+    color: var(--main-light-color);
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.success-msg-btn {
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    background: var(--main-light-color);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: var(--main-blue);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.success-msg-btn:hover {
+    background: var(--main-yellow);
+    color: #FAFFFA;
+}
+
+.success-msg-body {
+    background-color: var(--main-light-color);
+    color: var(--main-blue);
+    font-family: 'Inter';
+    font-size: 1.1rem;
+    padding: 50px 20px;
+}
+
 /*=========================FOOTER================================*/
 footer {
     min-height: 120px;
@@ -353,7 +392,8 @@ footer {
     border-top: 1px solid rgba(185, 185, 185, 0.15);
 }
 
-.footer-data, .footer-socials {
+.footer-data,
+.footer-socials {
     align-self: center;
 }
 
@@ -387,7 +427,6 @@ footer {
     font-size: 1.8rem;
 }
 
-
 @media (max-width:1200px) {
     #mazo {
         margin-top: 0;
@@ -409,9 +448,7 @@ footer {
         text-align: center !important;
     }
 
-   
-
-    .especialidad  {
+    .especialidad {
         border: none;
     }
 
@@ -428,13 +465,13 @@ footer {
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 
 @media (max-width:768px) {
-    .contact-curve{
+    .contact-curve {
         top: -100px;
-    } 
+    }
 
-    .especialidad  {
+    .especialidad {
         margin-top: 15px;
-        padding: 35px 30px 20px;
+        padding: 35px 10px 20px;
         border: none;
     }
 }
@@ -442,27 +479,26 @@ footer {
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
 @media (max-width: 576px) {
-    .contact-curve{
+    .contact-curve {
         top: -50px;
-    } 
+    }
 }
 
 @media (max-width: 420px) {
-    .contact-curve{
+    .contact-curve {
         position: relative;
         top: 15px;
-    } 
+    }
 }
 
-#nuestro-equipo .container{
+#nuestro-equipo .container {
     padding: 50px 12px;
 }
 
-#nuestro-equipo .carta{
+#nuestro-equipo .carta {
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
 }
-
