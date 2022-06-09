@@ -246,14 +246,20 @@ button:hover {
 }
 
 .modal-title {
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Bree Serif', serif;
     color: black;
+}
+.modal-cargo{
+    font-size: 20px;
+    margin-top:5px;
+
+    
 }
 
 .modal-body {
     background-color: rgb(41, 52, 89);
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Nuosu SIL', serif;
     color: white;
 }
@@ -262,6 +268,11 @@ button:hover {
     background-color: rgb(41, 52, 89);
 }
 
+.btn-close{
+    margin-bottom: 5Ppx;
+    height:7px;
+    width:7px;
+}
 /*=========================ESPECIALIDADES / AREAS DE PRACTICA================================*/
 .sec-light {
     min-height: 100vh;
