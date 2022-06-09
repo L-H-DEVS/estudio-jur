@@ -22,8 +22,5 @@ $(document).ready(function () {
         </div>`
       );
     });
-    //JALANDO INTEGRANTES
-    
-   
   });
 });
