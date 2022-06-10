@@ -137,8 +137,6 @@ a {
     margin-bottom: 50px;
 }
 
-
-
 .equipo {
     display: flex;
     justify-content: auto;
@@ -504,6 +502,15 @@ footer {
 }
 
 @media (max-width: 420px) {
+    #logop {
+        width: 220px;
+        height: auto;
+    }
+
+    #mazo .btn-whatsapp {
+        font-size: 1.25rem;
+    }
+
     .contact-curve {
         position: relative;
         top: 15px;
