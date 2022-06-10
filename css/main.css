@@ -454,18 +454,21 @@ footer {
 
 @media (max-width:992px) {
     #mazo {
-        height: auto !important;
+        min-height: 50vh;
+    }
+
+    #mazo .row{
+        margin-top: 100px;
     }
 
     #mazo .title {
-        margin-top: 150px;
+        
         display: block !important;
         justify-content: center !important;
         text-align: center !important;
     }
   
     .especialidad {
-        sistema-v1
         border: none;
     }
 
