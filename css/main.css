@@ -130,7 +130,7 @@ a {
 
 #mazo h1 {
     color: var(--main-light-color);
-    font-size: 3 rem;
+    font-size: 3.4rem;
     font-weight: 600;
     font-family: 'Cookie', cursive;
     line-height: 4rem;
@@ -454,22 +454,21 @@ footer {
         min-height: 50vh;
     }
 
+    #mazo h1 {
+        font-size: 2.8rem;
+    }
+
     #mazo .row{
         margin-top: 100px;
     }
 
     #mazo .title {
-        
         display: block !important;
         justify-content: center !important;
         text-align: center !important;
     }
    
     .especialidad {
-<<<<<<< HEAD
-      
-=======
->>>>>>> 3cdca0ef93a6a8abbaa727069f5412f71bcdbf50
         border: none;
     }
 
