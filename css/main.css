@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bree Serif', serif;
     overflow-x: hidden;
 }
 
@@ -267,8 +267,8 @@ button:hover {
 
 .modal-body {
     background-color: rgb(41, 52, 89);
-    font-size: 20px;
-    font-family: 'Nuosu SIL', serif;
+    font-size: 30px;
+    font-family: 'Cookie', cursive;
     color: white;
 }
 
@@ -366,7 +366,7 @@ button:hover {
 
 .success-msg-header .modal-title {
     color: var(--main-light-color);
-    font-family: 'Inter';
+    font-family: 'Bree Serif', serif;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -391,7 +391,7 @@ button:hover {
 .success-msg-body {
     background-color: var(--main-light-color);
     color: var(--main-blue);
-    font-family: 'Inter';
+    font-family: 'Bree Serif', serif;
     font-size: 1.1rem;
     padding: 50px 20px;
 }
@@ -462,9 +462,9 @@ footer {
         justify-content: center !important;
         text-align: center !important;
     }
-  
+   
     .especialidad {
-        sistema-v1
+      
         border: none;
     }
 
