@@ -94,6 +94,8 @@ a {
 /*===================SLIDER DE IMAGENES==========================*/
 #logop {
     height: 150px;
+    
+
 }
 
 #mazo {
@@ -128,17 +130,14 @@ a {
 
 #mazo h1 {
     color: var(--main-light-color);
-    font-size: 3.2rem;
+    font-size: 3 rem;
     font-weight: 600;
-    font-family: 'Cardo', cursive;
+    font-family: 'Cookie', cursive;
     line-height: 4rem;
     margin-bottom: 50px;
 }
 
-#mazo h1 span {
-    font-style: italic;
-    font-size: 3.4rem;
-}
+
 
 .equipo {
     display: flex;
