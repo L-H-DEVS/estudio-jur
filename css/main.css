@@ -142,11 +142,20 @@ a {
 
 .equipo {
     display: flex;
-    justify-content: center;
+    justify-content: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:scroll;
 }
-
+::-webkit-scrollbar {
+    display: none;
+    
+    }
 .persona-bg {
-    margin-right: 50px;
+   
+    flex:1 0 auto;
+    margin: 0 50px 0;
+
 }
 
 .persona-bg:last-child {
