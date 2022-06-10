@@ -94,7 +94,7 @@ a {
 /*===================SLIDER DE IMAGENES==========================*/
 #logop {
     height: 150px;
-    
+
 
 }
 
@@ -142,16 +142,18 @@ a {
     justify-content: auto;
     display: flex;
     flex-wrap: nowrap;
-    overflow:scroll;
-    margin-left:0.2px;
+    overflow: scroll;
+    margin-left: 0.2px;
 }
+
 ::-webkit-scrollbar {
     display: none;
-    
-    }
+
+}
+
 .persona-bg {
-   
-    flex:1 0 auto;
+
+    flex: 1 0 auto;
     margin: 0 0.5px 0;
 
 }
@@ -257,11 +259,12 @@ button:hover {
     font-family: 'Bree Serif', serif;
     color: black;
 }
-.modal-cargo{
-    font-size: 20px;
-    margin-top:5px;
 
-    
+.modal-cargo {
+    font-size: 20px;
+    margin-top: 5px;
+
+
 }
 
 .modal-body {
@@ -455,21 +458,24 @@ footer {
         min-height: 50vh;
     }
 
-    #mazo .row{
+    #mazo h1 {
+        font-size: 2.6rem;
+    }
+
+    #mazo .row {
         margin-top: 100px;
     }
 
     #mazo .title {
-        
+
         display: block !important;
         justify-content: center !important;
         text-align: center !important;
     }
-   
 
     .especialidad {
-       
-     border: none;
+
+        border: none;
     }
 
     .contact-info {
@@ -512,6 +518,12 @@ footer {
 
     #mazo .btn-whatsapp {
         font-size: 1.25rem;
+    }
+
+    .persona {
+        width: 200px;
+        height: 200px;
+        margin: 0 50px;
     }
 
     .contact-curve {
