@@ -4,12 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cookie&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nuosu+SIL&display=swap');
 
-/*
-font-family: 'Bree Serif', serif;
-font-family: 'Cardo', serif;
-font-family: 'Cookie', cursive;
-font-family: 'Inter', sans-serif;
-font-family: 'Nuosu SIL', serif;*/
 html,
 body {
     height: 100%;
@@ -149,6 +143,10 @@ a {
 ::-webkit-scrollbar {
     display: none;
 
+}
+
+[type=button], [type=reset], [type=submit], button {
+-webkit-appearance: button-bevel;
 }
 
 .persona-bg {
