@@ -10,18 +10,21 @@ $(document).ready(function () {
     "Jirón Sinchi Roca 7393 Urb. El Trébol II Etapa, Los Olivos - Lima 15302";
 
   const email = "estudioarmasyleyva@gmail.com";
+  const devsurl = "https://lyhdevs.github.io/lhdevs/";
   
   let yearTag = $("#year");
   let telfTag = $(".telf");
   let dirTag = $(".address");
   let emailTag = $(".email");
   let whatsBtn = $(".btn-whatsapp");
+  const devsLink = $("#devslink");
 
   yearTag.text(year);
   telfTag.text(telf);
   dirTag.text(direccion);
   emailTag.text(email);
   whatsBtn.attr("href", whatsapp);
+  devsLink.attr("href", devsurl);
 
   //Contact Form
   $('#contact-form').submit(function(e){
